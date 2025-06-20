@@ -3,12 +3,6 @@
   width: 0;
 }
 
-.app {
-  padding: 10px 20px;
-  background: blue;
-  color: #fafafa;
-}
-
 body {
   height: 100vh;
   display: flex;

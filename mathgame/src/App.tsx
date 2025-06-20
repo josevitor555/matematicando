@@ -1,13 +1,22 @@
+// React route
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// Pages
+import Dashboard from "./pages/Dashboard";
 
 const App = () => {
-
   return (
-    <>
-      <div className='app'>
-        <h1 className="text-3xl font-bold underline"> Olá, mundo. </h1>
-      </div>
-    </>
+    <BrowserRouter>
+      <Routes>
+        
+        {/* Dashboard page */}
+        <Route path="/" element={<Dashboard />} />
+
+        {/* Page not found */}
+        <Route path="*" element={<div>Page not found</div>} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
